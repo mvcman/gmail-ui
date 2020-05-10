@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../Pages/Home/home';
 import First from '../Pages/first/first';
 import Second from '../Pages/second/second';
 
 export default function Routes(){
     return (
-        <Router>
+        <>
             <Switch>
                 <Redirect exact from="/" to="/home" />
                 <Route exact path="/home">
@@ -19,6 +19,6 @@ export default function Routes(){
                     <Second />
                 </Route>
             </Switch>
-        </Router>
+        </>
     );
 }

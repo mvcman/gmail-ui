@@ -9,6 +9,8 @@ const useStyles = makeStyles((theme) =>
             //justifyContent: 'center',
             width: '100%',
             height: '100%',
+            zIndex: 10,
+            backgroundColor: '#fff',
         },
         text: {
             color: theme.palette.primary.main,

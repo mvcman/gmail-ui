@@ -6,20 +6,36 @@
 .main {
     width: calc(100% - 120px);
     height: calc(100% - 10%);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     position: fixed;
+    padding: 10px 20px;
     top: 10%;
     left: 70px;
     /*background-color: green;*/
-    z-index: 0;
+    z-index: 20;
+}
+.mainBig {
+    width: calc(100% - 300px);
+    height: calc(100% - 10%);
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    position: fixed;
+    padding: 10px 20px;
+    top: 10%;
+    left: 250px;
+    /*background-color: green;*/
+    z-index: 20;
 }
 .routes {
     width: '100%';
     margin-top: 50px;
     height: 100%;
-    /*background-color: red;*/
+    background-color: #fff;
     overflow-y: scroll;
+    z-index: 20;
 }
 
 

@@ -6,15 +6,6 @@ export default function Home(){
     return (
         <div className={classes.container}>
             <h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1><h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1><h1 className={classes.text}>Home Component</h1>
-            <h1 className={classes.text}>Home Component</h1>
-            
         </div>
     )
 }

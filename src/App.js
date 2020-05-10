@@ -5,7 +5,7 @@ import { ThemeProvider } from "@material-ui/core";
 import { theme1 } from './theme/theme';
 //import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import Routes from './Routes/routes';
-
+import { useSelector } from 'react-redux';
 // Navbar, sidebar and topbar
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
@@ -13,6 +13,7 @@ import Topbar from './components/TopNavbar';
 import Rightbar from './components/Rightbar';
 
 function App() {
+  const isToggle = useSelector(state => state.toggle.isOpen);
   return (
     <ThemeProvider theme={theme1}>
         <div className="App">
@@ -20,7 +21,7 @@ function App() {
         <Navbar />
         <Sidebar />
         <Rightbar />
-        <div className="main">
+        <div className={isToggle ? "mainBig" : "main" }>
             <Topbar />
             <div className="routes">
                 <Routes />

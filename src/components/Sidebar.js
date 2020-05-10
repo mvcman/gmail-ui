@@ -15,20 +15,20 @@ import AddIcon from '@material-ui/icons/Add';
 const pages = [
     {
         id: 1,
-        title: 'Dashboard',
-        href: '/dashboard',
+        title: 'First',
+        href: '/first',
         icon: <DashboardIcon style={{ marginRight: 20 }}/>,
     },
     {
         id: 2,
-        title: 'Calendar',
-        href: '/calendar',
+        title: 'Second',
+        href: '/second',
         icon: <EventIcon style={{ marginRight: 20 }}/>,
     },
     {
         id: 3,
-        title: 'Teams',
-        href: '/teams',
+        title: 'Home',
+        href: '/home',
         icon: <ApartmentIcon style={{ marginRight: 20 }}/>,
     },
     {
@@ -54,6 +54,7 @@ const pages = [
 export default function Sidebar(){
     const classes = useStyles();
     const isToggle = useSelector(state => state.toggle.isOpen);
+    const activeLink = useSelector(state => state.activeRoute.link);
     return (
         <div className={isToggle ? classes.sidebarBig : classes.sidebar}>
             <div className={classes.btn}>
@@ -61,7 +62,7 @@ export default function Sidebar(){
             </div>
             {
                 pages.map((page, i) => (
-                    <Link to={{ pathname: page.href }} className={classes.link}>
+                    <Link to={{ pathname: page.href }} className={activeLink === page.href ? classes.activeLink : classes.link}>
                         {page.icon}
                         {page.title}
                     </Link>

@@ -84,6 +84,7 @@ const useStyles = makeStyles((theme) =>
         },
         activeLink: {
             color: '#E74C3C',
+            backgroundColor: '#FADBD8',
             zIndex: 0,
             padding: '10px 25px',
             borderTopRightRadius: 10,

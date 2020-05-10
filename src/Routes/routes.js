@@ -15,7 +15,7 @@ export default function Routes(){
                 <Route exact path="/first">
                     <First />
                 </Route>
-                <Route exact path="/first">
+                <Route exact path="/second">
                     <Second />
                 </Route>
             </Switch>
